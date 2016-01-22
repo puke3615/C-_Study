@@ -1,0 +1,45 @@
+#include<iostream.h>
+
+using namespace std;
+
+#define AREA(radius) (PI * radius)
+#define PI 3.1415926535897932384626
+
+#define STR(x) #x;
+#define CONCAT(m, n) m ## n
+
+int main() {
+	
+	/**
+	double radius;
+	while (true) {
+		cout << "输入半径：";
+		cin >> radius;
+		if (radius == 88) {
+			break;
+		}
+		cout << "面积为: " << AREA(radius) << endl; 
+		cout << endl;
+	}
+	cout << "程序结束" << endl;
+	cout << endl;
+	**/
+	
+	int cat = 45;
+	
+	cout << STR(121`3214);
+	cout << endl;
+	cout << CONCAT(ca, t) << endl;
+	cout << endl;
+	//cout << CONCAT(abc, 23) << endl;
+	
+	cout << "行号 -- LINE --> " << __LINE__ << endl;
+	cout << "文件 -- FILE --> " << __FILE__ << endl;
+	cout << "日期 -- DATE --> " << __DATE__ << endl;
+	cout << "事件 -- TIME --> " << __TIME__ << endl;
+	
+	cout << endl; 
+	
+	return 0;
+}
+ 
